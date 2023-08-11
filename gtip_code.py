@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
-
-
 import pandas as pd
 import requests
 import json
@@ -90,9 +84,6 @@ merged_df.to_excel(output_file_path, index=False)
 merged_df_sorted = merged_df.sort_values(by='hs_code', ascending=True)
 merged_df_sorted.to_excel("sirali_combined_excel.xlsx", index=False)
 
-
-
-# In[ ]:
 
 
 
