@@ -78,6 +78,7 @@ file2_path = "output_last.xlsx"
 sheet2_name = "Sheet1"  
 df2 = pd.read_excel(file2_path, sheet_name=sheet2_name, dtype=str)
 
+
 merged_df = pd.concat([df1, df2], ignore_index=True)
 output_file_path = "combined_excel.xlsx"
 merged_df.to_excel(output_file_path, index=False)
